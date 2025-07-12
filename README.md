@@ -8,13 +8,13 @@ A visual predator–prey simulation built in Python using neural networks and ge
 
 ## 🧠 Features
 
-- Creatures evolve using simple neural networks
-- Predators also evolve and must feed to survive
-- Realistic energy mechanics and feeding cooldowns
-- Mutation and selection drive generational improvement
-- Visual simulation using Pygame
-- Time control: speed up, slow down, or skip generations
-- Stat overlay showing generation, energy, kills, and survivors
+* Creatures evolve using simple neural networks
+* Predators also evolve and must feed to survive
+* Realistic energy mechanics and feeding cooldowns
+* Mutation and selection drive generational improvement
+* Visual simulation using Pygame
+* Time control: speed up, slow down, or skip generations
+* Stat overlay showing generation, energy, kills, and survivors
 
 ---
 
@@ -24,51 +24,65 @@ A visual predator–prey simulation built in Python using neural networks and ge
 
 ```bash
 pip install pygame numpy
-▶️ Run the simulation
-bash
-Copy
-Edit
+```
+
+### ▶️ Run the simulation
+
+```bash
 python evo_sim_feeding.py
+```
+
 Use keyboard controls:
 
-+ / - to increase or decrease simulation speed
+* `+` / `-` to increase or decrease simulation speed
+* `S` to skip to the next generation
 
-S to skip to the next generation
+---
 
-🧬 How It Works
+## 🧬 How It Works
+
 Each creature and predator has a simple neural network with randomized weights. Over time:
 
-The best-performing individuals (most food eaten / kills made) are cloned
+* The best-performing individuals (most food eaten / kills made) are cloned
+* Small mutations are introduced to create variation
+* Survival pressure leads to emergent behaviors over generations
 
-Small mutations are introduced to create variation
+Predators must *hunt*, *kill*, and *feed* — but must stay still while feeding or risk losing their energy bonus.
 
-Survival pressure leads to emergent behaviors over generations
+---
 
-Predators must hunt, kill, and feed — but must stay still while feeding or risk losing their energy bonus.
+## 🔮 Planned Features
 
-🔮 Planned Features
-Visual display of brain inputs/outputs per agent
+* Visual display of brain inputs/outputs per agent
+* Graphs showing fitness trends over time
+* Saving/loading top-performing agents
+* Port to Unreal Engine for 3D simulation
+* Interactive debugging tools for brains
 
-Graphs showing fitness trends over time
+---
 
-Saving/loading top-performing agents
+## 📁 Project Structure
 
-Port to Unreal Engine for 3D simulation
-
-Interactive debugging tools for brains
-
-📁 Project Structure
-bash
-Copy
-Edit
+```
 evo_sim_feeding.py   # Main simulation script
 README.md            # Project overview (this file)
 assets/              # Placeholder for future images or exports
-🤝 Contributing
+```
+
+---
+
+## 🤝 Contributing
+
 Pull requests, issues, and feature ideas are welcome!
 
-📜 License
+---
+
+## 📜 License
+
 MIT License — do what you want, credit appreciated.
 
-🧠 Author
-stitched-dev
+---
+
+## 🧠 Author
+
+[stitched-dev](https://github.com/stitched-dev)
